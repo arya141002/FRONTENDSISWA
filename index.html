@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Siswa</title>
+</head>
+<body>
+    <h1>Data Siswa</h1>
+    <div id="area-login">
+        <h2>Login</h2>
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button id="btn-login">Login</button>
+        <p id="pesan-login" style="color:red"></p>
+        </div>
+
+        <div id="area-admin" style="display:none">
+        <p>Anda sudah login. <button id="btn-logout">Logout</button></p>
+
+        <h2>Tambah Siswa</h2>
+        <input id="nama" placeholder="Nama">
+        <select id="kelas">
+          <option value="">Pilih kelas</option>
+        </select>
+        <button id="btn-tambah">Tambah</button>
+        <p id="pesan-tambah" style="color:red"></p>
+    </div>
+    <input id="cari" placeholder="Cari nama siswa">
+    <table border="1" cellpadding="6">
+        <thead>
+        <tr><th>ID</th><th>Nama</th><th>Kelas</th></tr>
+        </thead>
+        <tbody id="tabel-siswa"></tbody>
+    </table>
+    <div>
+      <button id="btn-prev">Sebelumnya</button>
+      <span id="info-halaman"></span>
+      <button id="btn-next">Berikutnya</button>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
